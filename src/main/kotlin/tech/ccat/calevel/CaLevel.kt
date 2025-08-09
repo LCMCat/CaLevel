@@ -5,6 +5,7 @@ import org.bukkit.plugin.ServicePriority
 import org.bukkit.plugin.java.JavaPlugin
 import tech.ccat.calevel.api.CaLevelAPI
 import tech.ccat.calevel.api.CaLevelAPIImpl
+import tech.ccat.calevel.command.CategoryShowCommand
 import tech.ccat.calevel.command.ClaimRewardCommand
 import tech.ccat.calevel.command.CommandManager
 import tech.ccat.calevel.command.LevelShowCommand
@@ -141,6 +142,7 @@ class CaLevel : JavaPlugin(){
         commandManager.register(SelfCheckCommand())
         commandManager.register(LevelShowCommand())
         commandManager.register(ClaimRewardCommand())
+        commandManager.register(CategoryShowCommand())
         getCommand("level")?.setExecutor(commandManager)
         getCommand("level")?.tabCompleter = commandManager
     }

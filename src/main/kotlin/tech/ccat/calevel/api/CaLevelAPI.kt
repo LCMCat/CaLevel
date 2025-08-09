@@ -1,6 +1,8 @@
 package tech.ccat.calevel.api
 
 import org.bukkit.entity.Player
+import tech.ccat.calevel.model.ExpCategory
+import tech.ccat.calevel.model.ExpProviderData
 import tech.ccat.calevel.model.PlayerLevelData
 import tech.ccat.calevel.provider.ExperienceProvider
 
@@ -70,4 +72,19 @@ interface CaLevelAPI {
      * @return 成功领取的奖励数量
      */
     fun claimAllRewards(player: Player): Int
+
+    /**
+     * 获取指定类别的所有经验值提供器数据
+     * @param player 目标玩家
+     * @param category 经验类别
+     * @return 该类别下的经验数据列表
+     */
+    fun getExperienceDataByCategory(player: Player, category: ExpCategory): List<ExpProviderData>
+
+    /**
+     * 获取指定类别的所有经验值提供器
+     * @param category 经验类别
+     * @return 该类别下的经验值提供器列表
+     */
+    fun getProvidersByCategory(category: ExpCategory): List<ExperienceProvider>
 }

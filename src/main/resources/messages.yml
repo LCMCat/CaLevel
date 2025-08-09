@@ -23,3 +23,11 @@ claimable-rewards: "&a可领取奖励: &e%s"
 claimed-rewards: "&6已领取奖励: &e%s"
 
 data-save-failed: "&c保存等级数据失败，请联系管理员"
+
+# 类别相关消息
+category-header: "&6===== &e%s &6经验类别 ====="
+no-providers-in-category: "&7该类别下没有经验提供器"
+category-provider-entry: "&6✧ &a%s: &f%d/%d &b(%s%%)"
+category-provider-hint: "&7%s"
+category-total: "&6总计: &f%d/%d &b(%s%%)"
+invalid-category: "&c无效的经验类别: %s"

@@ -2,6 +2,8 @@ package tech.ccat.calevel.api
 
 import org.bukkit.entity.Player
 import tech.ccat.calevel.CaLevel
+import tech.ccat.calevel.model.ExpCategory
+import tech.ccat.calevel.model.ExpProviderData
 import tech.ccat.calevel.model.PlayerLevelData
 import tech.ccat.calevel.provider.ExperienceProvider
 
@@ -44,5 +46,12 @@ class CaLevelAPIImpl(private val plugin: CaLevel) : CaLevelAPI {
 
     override fun claimAllRewards(player: Player): Int {
         return plugin.rewardManager.claimAllRewards(player)
+    }
+    override fun getExperienceDataByCategory(player: Player, category: ExpCategory): List<ExpProviderData> {
+        return plugin.expManager.getExperienceDataByCategory(player, category)
+    }
+
+    override fun getProvidersByCategory(category: ExpCategory): List<ExperienceProvider> {
+        return plugin.expManager.getProvidersByCategory(category)
     }
 }

@@ -13,6 +13,8 @@ class LevelUpListener(private val plugin: CaLevel) : Listener {
         val player = event.player
         val newLevel = event.newLevel
 
+        plugin.getKStatsAPI()?.forceUpdate(player)
+
         // 发送升级提示
         player.sendMessage(MessageFormatter.format("level-up", newLevel))
 
