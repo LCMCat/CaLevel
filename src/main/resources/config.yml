@@ -1,0 +1,5 @@
+# MongoDB 配置
+mongo:
+  uri: "mongodb://localhost:27017"
+  database: "CatTitanium"
+  collection: "PlayerLevelCollection"

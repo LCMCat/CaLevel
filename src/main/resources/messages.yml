@@ -1,0 +1,25 @@
+# 消息配置
+level-up: "&a恭喜! 你已升级到 %d 级!"
+level-show-self: "&e你的等级: %d (%d/%d经验)"
+level-show-other: "&e玩家 %s 的等级: %d (%d/%d经验)"
+no-permission: "&c你没有权限执行此命令"
+player-command: "&c此命令仅供玩家使用"
+player-not-found: "&c错误：玩家 %s 不在线！"
+data-not-loaded: "&c错误：玩家数据未加载"
+command-usage: "&c命令使用方法: %s"
+no-available-command: "&c没有可供使用的命令"
+command-list-header: "&6==== CaLevel 命令列表 ===="
+
+#奖励相关消息
+reward-claimed: "&a成功领取 %d 级奖励!"
+all-rewards-claimed: "&a成功领取 %d 个等级奖励!"
+no-rewards-to-claim: "&c没有可领取的奖励"
+cannot-claim: "&c无法领取 %d 级奖励"
+invalid-level: "&c无效的等级"
+api-not-available: "&cAPI服务不可用"
+
+#奖励信息显示
+claimable-rewards: "&a可领取奖励: &e%s"
+claimed-rewards: "&6已领取奖励: &e%s"
+
+data-save-failed: "&c保存等级数据失败，请联系管理员"

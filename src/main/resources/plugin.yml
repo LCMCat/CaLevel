@@ -1,0 +1,15 @@
+name: CaLevel
+main: tech.ccat.calevel.CaLevel
+version: 1.0
+api-version: 1.20
+depend: [KStats]
+commands:
+  level:
+    description: Player level system
+    usage: |
+      /level
+      /level show <player>
+permissions:
+  calevel.admin:
+    description: Admin permissions
+    default: op
