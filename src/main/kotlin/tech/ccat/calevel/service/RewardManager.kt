@@ -80,7 +80,7 @@ class RewardManager(
         data.claimReward(level)
 
         // 更新KStats属性
-        CaLevel.getKStatsAPI()?.forceUpdate(player)
+        CaLevel.getKStatsAPI()?.requestUpdate(player)
 
         return true
     }
